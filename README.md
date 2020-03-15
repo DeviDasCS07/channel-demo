@@ -1,6 +1,8 @@
 # ChannelDemo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.24.
+use npm install to install all the node modules
+This app loads data from json file and renders on the screen grouped by date.
 
 ## Development server
 
