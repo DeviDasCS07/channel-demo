@@ -1,0 +1,25 @@
+.section-container {
+  -moz-box-shadow:    3px 3px 5px 6px steelblue;
+  -webkit-box-shadow: 3px 3px 5px 6px steelblue;
+  box-shadow:         3px 3px 5px 6px steelblue;
+  margin: 100px;
+  border: 10px  solid rebeccapurple;
+  background-color: fbf4f4;
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 20px;
+
+    .second-col {
+      width: 300px;
+    }
+    .time {
+      color: blue;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+  }
+}

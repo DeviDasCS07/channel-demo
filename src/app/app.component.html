@@ -1,0 +1,8 @@
+<section *ngFor="let channel of channelsGroupByDateInfo | keyvalue">
+  <section class="date">
+    {{channel.key}}
+  </section>
+  <app-channel-list-display [channelInfo]="channel.value" ></app-channel-list-display>
+</section>
+<!--
+<app-channel-list-display [channelInfo]="channelInfo" ></app-channel-list-display> -->

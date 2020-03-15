@@ -1,0 +1,38 @@
+<section class="section-container">
+  <ul>
+    <li *ngFor="let info of channelInfo">
+      <section class="flex-container">
+        <img
+          width="50px"
+          height="50px"
+          [src]="info.subjectPhotoUrl"
+          onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtOAipB5tp_ksoAL3zMF5eYQGm2Bc-BWlO8D1mgTEj6AVjgyrsuQ&s'"
+        />
+
+        <section class="second-col">
+          <b>{{ info.title }}</b>
+          <section>
+            {{ info.description }}
+          </section>
+        </section>
+
+        <section>
+          <img
+            width="50px"
+            height="50px"
+            [src]="info.instructorPhotoUrl"
+            onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtOAipB5tp_ksoAL3zMF5eYQGm2Bc-BWlO8D1mgTEj6AVjgyrsuQ&s'"
+          />
+          <span color="accent">
+            {{ info.instructorName}}
+          </span>
+        </section>
+
+        <section class="time">
+          <b>{{ info.time}} </b>
+        </section>
+      </section>
+      <mat-divider></mat-divider>
+    </li>
+  </ul>
+</section>
